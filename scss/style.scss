@@ -1,0 +1,80 @@
+/*
+    font-family: 'Arima Madurai', cursive;
+    font-family: 'Macondo', cursive;
+    font-family: 'Parisienne', cursive;
+    font-family: 'Sacramento', cursive;
+    font-family: 'Yrsa', serif;
+*/
+
+@import "utilities/variables";
+
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/*********************** ETIQUETAS DE CLASE **************************/
+body{
+    color: whitesmoke;
+    div{
+        header{
+            background: radial-gradient(circle, $mi-tono-oscuro, $mi-tono-claro);
+        
+        }
+        footer{
+            background-color: $mi-tono-oscuro;
+        }
+    }
+}
+/********************************************************************/
+
+
+/********************* ETIQUETAS ESPECIFICAS ************************/
+.mySelectedBackgroundStyle{
+    background-image: url(../img/316707.jpg);
+    /*background-size: cover;*/
+    margin:0%;
+    padding: 0%;
+}
+
+.menuTextStyle{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    text-transform: bold;
+    font-size: 1.4rem;
+    transition: 0.3s;
+}
+
+.menuTextStyle:hover{
+    text-decoration: underline;
+    font-size: 1.6rem;
+}
+
+.bg-card-backround{
+    background-color: rgb(194, 194, 194);
+}
+
+.bg-whitesmoke{
+    background-color: whitesmoke;
+}
+
+.myCarouselStyle{
+    width: 50%;
+    height: auto;
+}
+
+.mySloganStyle{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.6rem;
+    font-family: 'Yrsa', serif;
+}
+
+.myAccordionConteiner{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.myAccordionItem{
+    padding-left: 10%;
+    padding-right: 10%;
+}
