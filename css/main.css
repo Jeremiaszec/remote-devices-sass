@@ -19,6 +19,21 @@ body {
 
 /********************************************************************/
 /********************* ETIQUETAS ESPECIFICAS ************************/
+.icon-container a {
+  background-image: url("img/logo.jpg"); }
+
+.padreBoton {
+  display: grid; }
+  .padreBoton .navbar-toggler {
+    justify-self: end;
+    align-self: end; }
+
+.card-body {
+  display: grid; }
+  .card-body a {
+    align-self: end;
+    justify-self: center; }
+
 .mySelectedBackgroundStyle {
   background-image: url(../img/316707.jpg);
   /*background-size: cover;*/
@@ -26,17 +41,19 @@ body {
   padding: 0%; }
 
 .menuTextStyle {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Yrsa', serif;
   text-transform: uppercase;
   text-transform: bold;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   transition: 0.3s; }
 
 .menuTextStyle:hover {
   text-decoration: underline;
-  font-size: 1.6rem; }
+  font-size: 1.8rem; }
 
-.bg-card-backround {
+/*ACA SE USA EL MIXIN CON PARAMETROS*/
+.card-container {
+  box-shadow: 8px 6px 10px black;
   background-color: #c2c2c2; }
 
 .bg-whitesmoke {
@@ -47,15 +64,216 @@ body {
   height: auto; }
 
 .mySloganStyle {
-  margin-left: 10%;
-  margin-right: 10%;
   font-size: 1.6rem;
   font-family: 'Yrsa', serif; }
 
-.myAccordionConteiner {
-  margin-left: 5%;
-  margin-right: 5%; }
+.myAccordionConteiner, .myAccordionItem {
+  margin-left: 8%;
+  margin-right: 8%; }
 
-.myAccordionItem {
-  padding-left: 10%;
-  padding-right: 10%; }
+/*ACA ES DONDE SE UTILIZA EL EXTEND*/
+.myFormContainer {
+  display: grid;
+  grid-template-areas: "formTittle formTittle" "userName userName" "userNameInput userNameInput" "userEmail userEmail" "userEmailInput userEmailInput" "modeOp modeOp" "modeOpInput modeOpInput" "sendForm restoreForm";
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.4rem; }
+
+.formTittle {
+  grid-area: formTittle;
+  font-size: 1.6rem; }
+
+.userName {
+  grid-area: userName;
+  align-self: flex-end; }
+
+.userNameInput {
+  grid-area: userNameInput;
+  align-self: flex-start;
+  background-color: whitesmoke;
+  box-shadow: 10% 10% black; }
+
+.userEmail {
+  grid-area: userEmail;
+  align-self: flex-end; }
+
+.userEmailInput {
+  grid-area: userEmailInput;
+  align-self: flex-start; }
+
+.modeOp {
+  grid-area: modeOp;
+  align-self: end; }
+
+.modeOpInput {
+  grid-area: modeOpInput;
+  align-self: flex-start; }
+
+.sendForm {
+  grid-area: sendForm; }
+
+.restoreForm {
+  grid-area: restoreForm; }
+
+footer {
+  padding-top: 1%; }
+
+footer div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  cursor: pointer;
+  gap: 2%; }
+
+footer p {
+  margin-top: 1%; }
+
+.icon {
+  position: relative;
+  width: 80px;
+  height: 80%;
+  border-radius: 50%;
+  transition: all .8s; }
+
+/*ACA ES DONDE SE USA EL MAP*/
+.btn-facebook:hover {
+  background-color: #1877f2;
+  box-shadow: 0 0 20px #1877f2; }
+
+.btn-instagram:hover {
+  background-color: #e60073;
+  box-shadow: 0 0 20px #e60073; }
+
+.btn-twitter:hover {
+  background-color: #1da1f2;
+  box-shadow: 0 0 20px #1da1f2; }
+
+.btn-whatsapp:hover {
+  background-color: #25d366;
+  box-shadow: 0 0 20px #25d366; }
+
+/*ACA SE LO IMPLEMENTA CON PSEUDOCLASES*/
+.icon:hover {
+  background-color: #e60073;
+  box-shadow: 0 0 20px #e60073; }
+
+.icon:hover:nth-child(2) {
+  background-color: #25d366;
+  box-shadow: 0 0 20px #25d366; }
+
+.icon:hover:nth-child(3) {
+  background-color: #1877f2;
+  box-shadow: 0 0 20px #1877f2; }
+
+.icon:hover:nth-child(4) {
+  background-color: #1da1f2;
+  box-shadow: 0 0 20px #1da1f2; }
+
+.icon i {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.7rem; }
+
+svg circle {
+  stroke-dasharray: 150;
+  transition: all .4s ease-in-out; }
+
+.icon:hover circle {
+  stroke-dasharray: 220; }
+
+.mainVisualizacion {
+  display: grid;
+  grid-template-areas: "introVisualizacion introVisualizacion" "contenidoVisualizacion imagenVisualizacion";
+  align-items: center;
+  justify-content: center; }
+
+.contenidoVisualizacion {
+  grid-area: contenidoVisualizacion;
+  margin-left: 5%;
+  margin-top: 1%;
+  align-self: start;
+  font-family: 'Parisienne', cursive;
+  font-size: 1.8rem; }
+
+.introVisualizacion {
+  grid-area: introVisualizacion;
+  margin-top: 1%;
+  background: radial-gradient(circle, #cec9c9, #979696);
+  opacity: .6; }
+
+.introVisualizacion p {
+  font-size: 1.9rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black; }
+
+.imagenVisualizacion {
+  grid-area: imagenVisualizacion;
+  height: 500px;
+  width: 500px; }
+
+/*ACA SE VUELVE A UTILIZAR EL MIXIN CREADO*/
+.imagenVisualizacion img {
+  box-shadow: 6px 6px 10px black;
+  margin-top: 5%;
+  border-radius: 5%; }
+
+.mainActuadores {
+  display: grid;
+  grid-template-areas: "introActuadores introActuadores" "bannerActuadores imagenPpalActuadores" "bannerActuadores contenidoActuadores"; }
+
+.introActuadores {
+  grid-area: introActuadores;
+  font-size: 1.8rem;
+  font-family: 'Times New Roman', Times, serif; }
+
+.bannerActuadores {
+  grid-area: bannerActuadores;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
+.imagenPpalActuadores {
+  grid-area: imagenPpalActuadores;
+  align-self: center; }
+
+.imagenPpalActuadores img {
+  height: 400px;
+  width: 400px;
+  border-radius: 5%; }
+
+.contenidoActuadores {
+  grid-area: contenidoActuadores;
+  font-size: 1.6rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-family: 'Courier New', Courier, monospace; }
+
+@media screen and (max-width: 900px) {
+  .mainVisualizacion {
+    display: grid;
+    grid-template-areas: "introVisualizacion" "imagenVisualizacion"                        "contenidoVisualizacion";
+    justify-content: center;
+    align-items: center; }
+  .imagenVisualizacion {
+    grid-area: imagenVisualizacion;
+    height: 100%;
+    width: 100%; }
+  .contenidoVisualizacion {
+    margin-left: 0%; }
+  .mainActuadores {
+    display: grid;
+    grid-template-areas: "introActuadores" " imagenPpalActuadores" " contenidoActuadores"; }
+  .imagenPpalActuadores img {
+    height: 400px;
+    width: 400px;
+    border-radius: 5%; }
+  .contenidoActuadores {
+    grid-area: contenidoActuadores;
+    font-size: 1.4rem;
+    font-family: 'Courier New', Courier, monospace; }
+  .bannerActuadores {
+    display: none; } }

@@ -12,41 +12,99 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700;900&family=Macondo&family=Parisienne&family=Sacramento&family=Yrsa:wght@500&display=swap" rel="stylesheet">
+    <!-- iconos de boxicons -->
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <title>Contacto</title>
 </head>
 
 <body >
     <div class="container-fluid text-center mySelectedBackgroundStyle">
         <header class="row">
-            <div class="col-4 mt-3 mb-3">
-                <img width="180px" height="80px" src="../img/logo.jpg" alt="icono">
-            </div>
+			<div class="col-lg-2 col-xs-12 icon-container">
+				<img width="180px" height="80px" src="../img/logo.jpg" alt="icono">
+			</div>
 			
-            <nav class="navbar navbar-expand-lg  bg-light-dark col-8">
-                <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-light-dark row-xs col-lg">
+	            <div class="container-fluid">
+
+				    <button class="navbar-toggler col" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" 		aria-label="Toggle navigation">
+                  		<span class="navbar-toggler-icon"></span>
+              		</button>
                   
-				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  
-				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link active menuTextStyle" aria-current="page" href="../index.html">Home</a>
-                      <a class="nav-link active menuTextStyle" href="visualizacion.html">Monitorización</a>
-                      <a class="nav-link active menuTextStyle" href="sistemas.html">Dispoistivos</a>
-					  <a class="nav-link active menuTextStyle" href="actuadores.html">Actuadores</a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
+				  	<div class="collapse navbar-collapse col justify-content-center" id="navbarNavAltMarkup">
+						<div class="navbar-nav">
+							<a class="nav-link active menuTextStyle" aria-current="page" href="../index.html">Home</a>
+							<a class="nav-link active menuTextStyle" href="visualizacion.html">Monitorización</a>
+							<a class="nav-link active menuTextStyle" href="sistemas.html">Dispoistivos</a>
+							<a class="nav-link active menuTextStyle" href="actuadores.html">Actuadores</a>
+						</div>
+                	</div>
+            	</div>
+        	</nav>
         </header>
 
         <main>
-            <p>CONTENIDO DISPONIBLE PROXIMAMENTE</p>
+            <form action="">
+                <fieldset class="myFormContainer">
+                    <legend class="formTittle">Formulario de usuario</legend>
+                    
+                        <label for="nombre" class="userName">Nombre de usuario</label>
+                        
+                        <input class="userNameInput" type="text" name="nombre" placeholder="ej: Juan Carlos">
+                    
+                        <label class="userEmail" for="mail">Completa tu email</label>
+
+                        <input class="userEmailInput" type="email" name="mail@asd" placeholder="ej: asd@asd.com.ar">
+                    
+                        <label class="modeOp" for="modo">modo de operación</label>
+
+                        <select class="modeOpInput" name="modo" id="">
+                            <option value="modo1">modo 1</option>
+                            <option value="modo2">modo 2</option>
+                            <option value="modo3">modo 3</option>
+                        </select>
+
+                        <input type="submit" value="enviar">
+                        <input type="reset" value="restablecer">
+                </fieldset>
+            </form>
+            <br><br><br><br><br><br><br><br><br><br>
+            <br><br><br><br><br><br><br><br><br><br>
         </main>
 
         <footer>
-            <p>Todos los derechos reservados.</p>
+
+			<div>
+				<div class="icon">
+					<svg height="80" width="80">
+						<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
+					</svg>
+					<i class='bx bxl-instagram'></i>
+				</div>
+	
+				<div class="icon">
+					<svg height="80" width="80">
+						<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
+					</svg>
+					<i class='bx bxl-whatsapp'></i>
+				</div>
+	
+				<div class="icon">
+					<svg height="80" width="80">
+						<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
+					</svg>
+					<i class='bx bxl-facebook-circle' ></i>
+				</div>
+	
+				<div class="icon">
+					<svg height="80" width="80">
+						<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
+					</svg>
+					<i class='bx bxl-twitter' ></i>
+				</div>
+	
+			</div>
+            <p>Todos los derechos reservados. Jeremias Ignacio Zec</p>
         </footer>
     </div>    
 <!-- JavaScript Bundle with Popper -->

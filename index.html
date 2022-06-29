@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+	<meta name="description" content="development of internet of things devices">
+	<meta name="keywords" content="HTML, CSS, JavaScript, IoT, REMOTE, DEVICES">
+	<meta name="author" content="Jeremias Zec">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- link for bootstrap -->
@@ -12,49 +15,52 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@700;900&family=Macondo&family=Parisienne&family=Sacramento&family=Yrsa:wght@500&display=swap" rel="stylesheet">
-    <title>REMOTE DEVICES</title>
+    <!-- iconos de boxicons -->
+	<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+	<title>REMOTE DEVICES</title>
 </head>
 
 <body >
     <div class="container-fluid text-center mySelectedBackgroundStyle">
         
         <header class="row">
-            <div class="col-4 mt-3 mb-3">
-                <img width="180px" height="80px" src="img/logo.jpg" alt="icono">
-            </div>
+			<div class="col-lg-2 col-xs-12 icon-container">
+				<img width="180px" height="80px" src="img/logo.jpg" alt="icono">
+			</div>
 			
-            <nav class="navbar navbar-expand-lg  bg-light-dark col-8">
-                <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg bg-light-dark row-xs col-lg">
+	            <div class="container-fluid">
+
+				    <button class="navbar-toggler col" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" 		aria-label="Toggle navigation">
+                  		<span class="navbar-toggler-icon"></span>
+              		</button>
                   
-				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  
-				  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                      <a class="nav-link active menuTextStyle" aria-current="page" href="#">Home</a>
-                      <a class="nav-link active menuTextStyle" href="pages/contacto.html">Contacto</a>
-                      <a class="nav-link active menuTextStyle" href="pages/visualizacion.html">Monitorización</a>
-                      <a class="nav-link active menuTextStyle" href="pages/sistemas.html">Dispoistivos</a>
-					  <a class="nav-link active menuTextStyle" href="pages/actuadores.html">Actuadores</a>
-                    </div>
-                  </div>
-                </div>
-              </nav>
+				  	<div class="collapse navbar-collapse col justify-content-center" id="navbarNavAltMarkup">
+						<div class="navbar-nav">
+							<a class="nav-link active menuTextStyle" aria-current="page" href="#">Home</a>
+							<a class="nav-link active menuTextStyle" href="pages/contacto.html">Contacto</a>
+							<a class="nav-link active menuTextStyle" href="pages/visualizacion.html">Monitorización</a>
+							<a class="nav-link active menuTextStyle" href="pages/sistemas.html">Dispoistivos</a>
+							<a class="nav-link active menuTextStyle" href="pages/actuadores.html">Actuadores</a>
+						</div>
+                	</div>
+            	</div>
+        	</nav>
         </header>
 
         <main>
 
-			<div class="row mySloganStyle">
+			<div class="row mySloganStyle ms-lg-5 me-lg-5">
 				<p>
-					Somos una empresa dedicada al control, todos los dias nuevos clientes y nos eligen nos dan su confianza por que ya contamos con cientos de dispositivos funcionando desde sus hogares que a través de un comando amigable desempeñan tareas especificas en los lugares mas reconditos del mundo.
+					Somos una empresa dedicada al control, todos los dias nuevos clientes nos eligen nos dan su confianza por que ya contamos con cientos de dispositivos funcionando desde sus hogares que a través de un comando amigable desempeñan tareas especificas en los lugares mas reconditos del mundo.
 				</p>
 			</div>
 
             <section class="row pt-2 text-dark mb-3 justify-content-center">
 
-                <div class="card m-2 bg-card-backround" style="width: 18rem;">
-                    <img src="img/caldera_02.jpeg" class="card-img-top mt-3" alt="caldera industrial">
+                <div class="card m-2 card-container" style="width: 18rem;">
+                    <img src="img/caldera_262x262.png" class="card-img-top mt-3" alt="caldera industrial">
                     <div class="card-body">
                       <h5 class="card-title">Calderas</h5>
                       <p class="card-text">Encendido y apagado seguro de calderas, temporizacion y control optimo de la temperatura con excelente performance.</p>
@@ -62,8 +68,8 @@
                     </div>
                 </div>
 
-                <div class="card m-2 ms-4 bg-card-backround" style="width: 18rem;">
-                    <img src="img/motor_paso_a_paso.jpeg" class="card-img-top mt-3" alt="caldera industrial">
+                <div class="card m-2 ms-4 card-container" style="width: 18rem;">
+                    <img src="img/motor_pap_262x262.png" class="card-img-top mt-3" alt="caldera industrial">
                     <div class="card-body">
                       <h5 class="card-title">Motores paso a paso</h5>
                       <p class="card-text">Motores de paso a paso para cuando se requiere una presición extrema.</p>
@@ -71,8 +77,8 @@
                     </div>
                 </div>
 
-                <div class="card m-2 ms-4 bg-card-backround" style="width: 18rem;">
-                    <img src="img/motor_dc.jpg" class="card-img-top mt-3" alt="caldera industrial">
+                <div class="card m-2 ms-4 card-container" style="width: 18rem;">
+                    <img src="img/motor_dc_262x262.png" class="card-img-top mt-3" alt="caldera industrial">
                     <div class="card-body">
                       <h5 class="card-title">Motores DC</h5>
                       <p class="card-text">Motores de corriente continua de proposito general.</p>
@@ -80,8 +86,8 @@
                     </div>
                 </div>
 
-                <div class="card m-2 ms-4 bg-card-backround" style="width: 18rem;">
-                    <img src="img/camara_IP.jpg" class="card-img-top mt-3" alt="caldera industrial">
+                <div class="card m-2 ms-4 card-container" style="width: 18rem;">
+                    <img src="img/camara_IP_262x262.png" class="card-img-top mt-3" alt="caldera industrial">
                     <div class="card-body">
                       <h5 class="card-title">Camaras IP</h5>
                       <p class="card-text">Seguridad 24hs mediante monitorización de forma remota por camaras IP.</p>
@@ -90,7 +96,7 @@
                 </div>
             </section>
 
-			<div class="row mySloganStyle">
+			<div class="row mySloganStyle ms-lg-5 me-lg-5">
 				<p>
 					Como trayectoria cargamos a nuestras espaldas una amplia diversisdad de sistemas creadas a travez de nuestra interfaz. Nos ajuntamos a demas a los requerimientos especificos de cada cliente de manera que en todo momento de un proyecto se sientan acompañados.
 				</p>
@@ -144,7 +150,38 @@
         </main>
 
         <footer>
-            <p>Todos los derechos reservados.</p>
+
+			<div>
+				<div class="icon">
+					<svg height="80" width="80">
+						<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
+					</svg>
+					<i class='bx bxl-instagram'></i>
+				</div>
+	
+				<div class="icon">
+					<svg height="80" width="80">
+						<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
+					</svg>
+					<i class='bx bxl-whatsapp'></i>
+				</div>
+	
+				<div class="icon">
+					<svg height="80" width="80">
+						<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
+					</svg>
+					<i class='bx bxl-facebook-circle' ></i>
+				</div>
+	
+				<div class="icon">
+					<svg height="80" width="80">
+						<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
+					</svg>
+					<i class='bx bxl-twitter' ></i>
+				</div>
+	
+			</div>
+            <p>Todos los derechos reservados. Jeremias Ignacio Zec</p>
         </footer>
     </div>    
 <!-- JavaScript Bundle with Popper -->
