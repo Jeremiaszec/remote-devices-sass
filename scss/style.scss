@@ -11,6 +11,7 @@
 *{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 /*********************** ETIQUETAS DE CLASE **************************/
 body{
@@ -81,6 +82,14 @@ body{
 .card-container{
     @include sombreado(8px, 6px, 10px, black);
     background-color: rgb(194, 194, 194);
+    transition: .3s;
+
+}
+
+.card:hover{
+  transform: scale(1.04);
+  background-color: rgb(117, 110, 136);
+  //transform: translateY(4%)
 }
 
 .bg-whitesmoke{
@@ -95,6 +104,10 @@ body{
 .mySloganStyle{
     font-size: 1.6rem;
     font-family: 'Yrsa', serif;
+    background-color: #2a2a31;
+    margin-top: 1%;
+    //border: 2px solid #262626;
+    color:#929292;
 }
 
 %margenes-laterales{    
@@ -273,7 +286,11 @@ footer{
     margin-top: 1%;
     align-self: start;
     font-family: 'Parisienne', cursive;
+    background-color: #e0dedeb4;
+    border-radius: 10px;
+    color: black;
     font-size: 1.8rem;
+    box-shadow: 5px 5px 10px black;
   }
 
   .introVisualizacion{
