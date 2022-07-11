@@ -9,14 +9,19 @@
   margin: 0%;
   padding: 0%;
   box-sizing: border-box; }
+  * .row {
+    margin: 0; }
 
 /*********************** ETIQUETAS DE CLASE **************************/
 body {
   color: whitesmoke; }
   body div header {
-    background: radial-gradient(circle, #2c2b2b, #979696); }
+    background: radial-gradient(circle, #2c2b2b, #979696);
+    border-bottom: 4px solid black;
+    box-shadow: 5px 5px 5px black; }
   body div footer {
-    background-color: #2c2b2b; }
+    background-color: #2c2b2b;
+    margin-top: 2%; }
 
 /********************************************************************/
 /********************* ETIQUETAS ESPECIFICAS ************************/
@@ -41,16 +46,25 @@ body {
   margin: 0%;
   padding: 0%; }
 
-.menuTextStyle {
-  font-family: 'Yrsa', serif;
-  text-transform: uppercase;
-  text-transform: bold;
+.navbar-nav .menuTextStyle {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.6rem;
-  transition: 0.3s; }
+  transition: .3s;
+  background-color: #a3a1a1fa;
+  border-left: 1px solid #4e4c4c; }
 
-.menuTextStyle:hover {
-  text-decoration: underline;
-  font-size: 1.8rem; }
+.navbar-nav .menuTextStyle:hover {
+  background-color: #8f8f91;
+  border: 1px solid black; }
+
+.navbar-nav :first-child {
+  border-left: none;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px; }
+
+.navbar-nav :last-child {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px; }
 
 /*ACA SE USA EL MIXIN CON PARAMETROS*/
 .card-container {
@@ -69,12 +83,28 @@ body {
   width: 50%;
   height: auto; }
 
+.carousel-inner {
+  border: 4mm ridge #83bd7d;
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px black;
+  background-color: #8f8f91; }
+  .carousel-inner .carousel-item img {
+    height: 100%; }
+
+.carousel-caption {
+  background-color: #f3f2f2b2;
+  color: #2a2a31;
+  border-radius: 5px; }
+
 .mySloganStyle {
   font-size: 1.6rem;
   font-family: 'Yrsa', serif;
   background-color: #2a2a31;
   margin-top: 1%;
   color: #929292; }
+  .mySloganStyle p {
+    padding-left: 5%;
+    padding-right: 5%; }
 
 .myAccordionConteiner, .myAccordionItem {
   margin-left: 8%;
@@ -265,7 +295,7 @@ svg circle {
   margin-right: 5%;
   font-family: 'Courier New', Courier, monospace; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 991px) {
   .mainVisualizacion {
     display: grid;
     grid-template-areas: "introVisualizacion" "imagenVisualizacion"                        "contenidoVisualizacion";
@@ -289,4 +319,18 @@ svg circle {
     font-size: 1.4rem;
     font-family: 'Courier New', Courier, monospace; }
   .bannerActuadores {
-    display: none; } }
+    display: none; }
+  .navbar-nav .menuTextStyle {
+    background-color: #a3a1a1fa;
+    border-left: 1px solid #4e4c4c; }
+  .navbar-nav .menuTextStyle:hover {
+    background-color: #8f8f91;
+    border: 1px solid black; }
+  .navbar-nav :first-child {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px; }
+  .navbar-nav :last-child {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px; }
+  .navbar-toggler {
+    background-color: #5c688d; } }

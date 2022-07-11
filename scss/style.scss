@@ -12,17 +12,24 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    .row{
+      margin:0;
+    }
 }
+
 /*********************** ETIQUETAS DE CLASE **************************/
 body{
     color: whitesmoke;
     div{
         header{
             background: radial-gradient(circle, $mi-tono-oscuro, $mi-tono-claro);
+            border-bottom: 4px solid black;
+            box-shadow: 5px 5px 5px black;
         
         }
         footer{
             background-color: $mi-tono-oscuro;
+            margin-top: 2%;
         }
     }
 }
@@ -59,20 +66,33 @@ body{
     padding: 0%;
 }
 
-
-.menuTextStyle{
-    //font-family: 'Courier New', Courier, monospace;
-    font-family: 'Yrsa', serif;
-    text-transform: uppercase;
-    text-transform: bold;
+.navbar-nav{  
+  .menuTextStyle{    
+    font-family:Georgia, 'Times New Roman', Times, serif;
     font-size: 1.6rem;
-    transition: 0.3s;
+    transition: .3s;
+
+    background-color: #a3a1a1fa;
+    border-left: 1px solid rgb(78, 76, 76);
+
+  }
+  .menuTextStyle:hover{
+    //text-decoration: underline;
+    background-color: #8f8f91;
+    border: 1px solid black;
+  }
+  :first-child{
+    border-left: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px; 
+  }
+  :last-child{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
 }
 
-.menuTextStyle:hover{
-    text-decoration: underline;
-    font-size: 1.8rem;
-}
+
 
 /*ACA SE USA EL MIXIN CON PARAMETROS*/
 @mixin sombreado($espesor-abajo, $espesor-derecha, $difusion, $color){
@@ -100,6 +120,24 @@ body{
     width: 50%;
     height: auto;
 }
+.carousel-inner{
+  border: 4mm ridge rgb(131, 189, 125);
+  border-radius: 10px;
+  box-shadow: 10px 10px 8px black;
+  
+  background-color: #8f8f91;
+
+  .carousel-item{
+    img{
+      height: 100%;
+    }
+  }
+}
+.carousel-caption{
+  background-color: #f3f2f2b2;
+  color: #2a2a31;
+  border-radius: 5px;
+}
 
 .mySloganStyle{
     font-size: 1.6rem;
@@ -108,6 +146,10 @@ body{
     margin-top: 1%;
     //border: 2px solid #262626;
     color:#929292;
+    p{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
 }
 
 %margenes-laterales{    
@@ -356,7 +398,7 @@ footer{
     font-family: 'Courier New', Courier, monospace;
   }
 
-  @media screen and (max-width: 900px){
+  @media screen and (max-width: 991px){
     .mainVisualizacion{
       display: grid;
       grid-template-areas: "introVisualizacion"
@@ -397,6 +439,31 @@ footer{
     
     .bannerActuadores{
       display: none;
+    }
+
+    .navbar-nav{  
+      .menuTextStyle{    
+
+        background-color: #a3a1a1fa;
+        border-left: 1px solid rgb(78, 76, 76);
+    
+      }
+      .menuTextStyle:hover{
+        //text-decoration: underline;
+        background-color: #8f8f91;
+        border: 1px solid black;
+      }
+      :first-child{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px; 
+      }
+      :last-child{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+    }
+    .navbar-toggler{
+      background-color: #5c688d;
     }
   }  
 
