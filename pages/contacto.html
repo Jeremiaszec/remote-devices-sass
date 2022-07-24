@@ -47,63 +47,79 @@
         </header>
 
         <main>
-            <form action="">
-                <fieldset class="myFormContainer">
-                    <legend class="formTittle">Formulario de usuario</legend>
-                    
-                        <label for="nombre" class="userName">Nombre de usuario</label>
-                        
-                        <input class="userNameInput" type="text" name="nombre" placeholder="ej: Juan Carlos">
-                    
-                        <label class="userEmail" for="mail">Completa tu email</label>
+			<form action="" class="form-register">
+				<h4>Formulario de usuario</h4>
+				<input class="controls" type="text" name="nombres" id="nombres" placeholder="Ingrese su Nombre">
+				<input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Ingrese su Apellido">
+				<input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su Correo">
+				
+				<label class="modeOp" for="pais">País de origen</label>
+				<select class="controls" name="pais" id="">
+					<option value="arg">Argentina</option>
+					<option value="chi">Chile</option>
+					<option value="uru">Uruguay</option>
+				</select>
+				
+				<label for="comentarios">Dejar comentarios</label>
+				<input class="controls comments" type="email" name="correo" id="correo">
+				
+				<p>Estoy de acuerdo con <a href="#conditions">Terminos y Condiciones</a></p>
+				<section class="actionButtons">
+					<input class="botons" type="submit" value="Enviar">
+					<input class="botons" type="reset" value="Restablecer">
+				</section>
+			</form>
 
-                        <input class="userEmailInput" type="email" name="mail@asd" placeholder="ej: asd@asd.com.ar">
-                    
-                        <label class="modeOp" for="modo">modo de operación</label>
-
-                        <select class="modeOpInput" name="modo" id="">
-                            <option value="modo1">modo 1</option>
-                            <option value="modo2">modo 2</option>
-                            <option value="modo3">modo 3</option>
-                        </select>
-
-                        <input type="submit" value="enviar">
-                        <input type="reset" value="restablecer">
-                </fieldset>
-            </form>
-            <br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br>
+			<section class="terms" id="conditions">
+				<p>
+					Cuando recibimos un reclamo de garantía válido de un producto que vendemos, repararemos el defecto relevante o reemplazaremos el producto. Si no podemos reparar o reemplazar el producto dentro de un tiempo razonable, el cliente tendrá derecho a un reembolso total cuando nos devuelva el producto. Pagaremos el envío de los productos reparados o reemplazados al cliente y el cliente será responsable de devolvernos el producto.
+				</p>
+				<p>
+					El Servicio y todos los materiales incluidos o transferidos, incluyendo, sin limitación, software, imágenes, texto, gráficos, logotipos, patentes, marcas registradas, marcas de servicio, derechos de autor, fotografías, audio, videos, música y todos los Derechos de Propiedad Intelectual relacionados con ellos, son la propiedad exclusiva de [Nombre del propietario dela página web]. Salvo que se indique explícitamente en este documento, no se considerará que nada en estos Términos crea una licencia en o bajo ninguno de dichos Derechos de Propiedad Intelectual, y tu aceptas no vender, licenciar, alquilar, modificar, distribuir, copiar, reproducir, transmitir, exhibir públicamente, realizar públicamente, publicar, adaptar, editar o crear trabajos derivados de los mismos.
+				</p>
+				<p>
+					En la máxima medida permitida por la ley aplicable, en ningún caso el [propietario de la página web] será responsable por daños indirectos, punitivos, incidentales, especiales, consecuentes o ejemplares, incluidos, entre otros, daños por pérdida de beneficios, buena voluntad, uso, datos. u otras pérdidas intangibles, que surjan de o estén relacionadas con el uso o la imposibilidad de utilizar el servicio. 
+				</p>
+			</section>
         </main>
 
         <footer>
 
 			<div>
 				<div class="icon">
-					<svg height="80" width="80">
-						<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
-					</svg>
-					<i class='bx bxl-instagram'></i>
+					<a href="https://www.instagram.com/jeremiaszec/" target="_blank">
+						<svg height="80" width="80">
+							<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
+						</svg>
+						<i class='bx bxl-instagram'></i>
+					</a>
 				</div>
 	
 				<div class="icon">
-					<svg height="80" width="80">
-						<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
-					</svg>
-					<i class='bx bxl-whatsapp'></i>
+					<a href="https://web.whatsapp.com/" target="_blank">
+						<svg height="80" width="80">
+							<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
+						</svg>
+						<i class='bx bxl-whatsapp'></i>
+					</a>
 				</div>
 	
 				<div class="icon">
-					<svg height="80" width="80">
-						<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
-					</svg>
-					<i class='bx bxl-facebook-circle' ></i>
+					<a href="https://www.facebook.com/jeremias.zec" target="_blank">
+						<svg height="80" width="80">
+							<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
+						</svg>
+						<i class='bx bxl-facebook-circle' ></i>
+					</a>
 				</div>
 	
 				<div class="icon">
-					<svg height="80" width="80">
-						<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
-					</svg>
-					<i class='bx bxl-twitter' ></i>
+					<a href="https://twitter.com/TheIoT" target="_blank">
+						<svg height="80" width="80">
+							<circle cx="40" cy="40" r="35" stroke="white" stroke-width="4" fill="none"></circle> 
+						</svg>
+						<i class='bx bxl-twitter' ></i>
+					</a>
 				</div>
 	
 			</div>

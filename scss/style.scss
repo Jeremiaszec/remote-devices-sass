@@ -25,7 +25,9 @@ body{
             background: radial-gradient(circle, $mi-tono-oscuro, $mi-tono-claro);
             border-bottom: 4px solid black;
             box-shadow: 5px 5px 5px black;
-        
+            z-index: 1000;
+            position: sticky;
+            top: 0;
         }
         footer{
             background-color: $mi-tono-oscuro;
@@ -398,7 +400,135 @@ footer{
     font-family: 'Courier New', Courier, monospace;
   }
 
+
+  .form-register {
+    width: 80%;
+    background: #24303c;
+    padding: 5%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    h4 {
+      font-size: 2rem;
+      margin-bottom: 10%;
+    }
+    p {
+      height: 40px;
+      text-align: center;
+      font-size: 1.2rem;
+      line-height: 40px;
+    }
+    a {
+      color: whitesmoke;
+      text-decoration: none;
+    }
+    a:hover {
+      color: whitesmoke;
+      text-decoration: underline;
+    }
+    .botons {
+      width: 45%;
+      background: #1f53c5;
+      border: none;
+      padding: 12px;
+      color: white;
+      margin: 16px 0;
+      font-size: 16px;
+    }
+    .controls {
+      width: 100%;
+      background: #24303c;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 16px;
+      border: 1px solid #1f53c5;
+      font-family: 'calibri';
+      font-size: 18px;
+      color: white;
+      .comments{
+        border: 1px solid #515357;   
+      }
+    }
+    .actionButtons{
+      display: flex;
+      flex-direction: row;
+      justify-content:space-between
+    }
+  }
+
+  .terms{
+    margin-top: 5%;
+    background-color: rgba(255, 255, 255, 0.541);
+    color:  black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    text-align: left;
+    padding: 2%;
+  }
+  
+  
+  //vista movile estilos para un ancho hasta 991px
   @media screen and (max-width: 991px){
+
+    .form-register {
+      width: 90%;
+      background: #24303c;
+      padding: 2%;
+      margin: auto;
+      margin-top: 5%;
+      border-radius: 4px;
+      font-family: 'calibri';
+      color: white;
+      box-shadow: 7px 13px 37px #000;
+      h4 {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      p {
+        height: 40px;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      a:hover {
+        color: white;
+        text-decoration: underline;
+      }
+      .botons {
+        width: 100%;
+        background: #1f53c5;
+        border: none;
+        padding: 12px;
+        color: white;
+        margin: 16px 0;
+        font-size: 16px;
+      }
+      .controls {
+        width: 100%;
+        background: #24303c;
+        padding: 10px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid #1f53c5;
+        font-family: 'calibri';
+        font-size: 18px;
+        color: white;
+        .comments{
+          border: 1px solid #515357;   
+        }
+      }
+      .actionButtons{
+        display: block;
+      }
+    }
+
     .mainVisualizacion{
       display: grid;
       grid-template-areas: "introVisualizacion"
